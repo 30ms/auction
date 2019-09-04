@@ -42,6 +42,6 @@
   <!--全局参数：xml文件的路径-->
   <context-param>
     <param-name>contextConfigLocation</param-name>
-    <param-value>classpath:config/springConfig.xml</param-value>
+    <param-value>classpath:config/applicationContext.xml</param-value>
   </context-param>
 </web-app>

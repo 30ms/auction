@@ -4,9 +4,11 @@ import cn.web.auction.dao.AuctionuserMapper;
 import cn.web.auction.pojo.Auctionuser;
 import cn.web.auction.pojo.AuctionuserExample;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class userServiceImpl implements cn.web.auction.services.userService{
 
     @Autowired
