@@ -1,12 +1,18 @@
 package cn.web.auction.pojo;
 
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
+
 public class Auctionuser {
     private Integer userid;
 
+    @Size(min=3,max=6,message = "用户名长度必须位3-6")
     private String username;
 
+    @Size(min = 4,message = "密码长度至少4")
     private String userpassword;
 
+    @Pattern(regexp = "\\d{18}",message = "身份证长度位18")//正则表达式
     private String usercardno;
 
     private String usertel;

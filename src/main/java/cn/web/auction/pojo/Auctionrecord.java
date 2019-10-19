@@ -14,6 +14,16 @@ public class Auctionrecord {
 
     private BigDecimal auctionprice;
 
+    private Auctionuser user;
+
+    public Auctionuser getUser() {
+        return user;
+    }
+
+    public void setUser(Auctionuser user) {
+        this.user = user;
+    }
+
     public Integer getId() {
         return id;
     }

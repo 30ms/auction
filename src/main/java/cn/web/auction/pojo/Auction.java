@@ -1,7 +1,10 @@
 package cn.web.auction.pojo;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.math.BigDecimal;
 import java.util.Date;
+import java.util.List;
 
 public class Auction {
     private Integer auctionid;
@@ -12,8 +15,10 @@ public class Auction {
 
     private BigDecimal auctionupset;
 
+//    @DateTimeFormat(pattern = "yyyy-MM-dd\"T\"hh:mm")
     private Date auctionstarttime;
 
+//    @DateTimeFormat(pattern = "yyyy-MM-dd\"T\"hh:mm")
     private Date auctionendtime;
 
     private String auctionpic;
@@ -21,6 +26,16 @@ public class Auction {
     private String auctionpictype;
 
     private String auctiondesc;
+
+    private List<Auctionrecord> auctionrecordList;
+
+    public List<Auctionrecord> getAuctionrecordList(){
+        return  auctionrecordList;
+    }
+
+    public void setAuctionrecordList(List<Auctionrecord> auctionrecordList){
+        this.auctionrecordList=auctionrecordList;
+    }
 
     public Integer getAuctionid() {
         return auctionid;
